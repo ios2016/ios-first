@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:13Happiness/13Happiness.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:L12Calculator/L12Calculator.xcodeproj">
    </FileRef>
    <FileRef

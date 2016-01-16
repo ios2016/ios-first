@@ -23,11 +23,13 @@ class ViewController: UIViewController {
             display.text = digit
             isReadyInput=true
         }
+        
+        
         print("digit = \(digit)")
     }
-
+    
     @IBAction func oprator(sender: UIButton) {
-      
+    
         if isReadyInput{
             enter()
         }
@@ -39,17 +41,15 @@ class ViewController: UIViewController {
             }else{
                 displayValue = 0
             }
-            
-            
         }
         /*
         switch opratorText{
-            case "×": operationOperator{$0 * $1}
-            case "÷": operationOperator{$1 / $0}
-            case "+": operationOperator{$0 + $1}
-            case "−": operationOperator{$1 - $0}
-            case "√": oneOperationOperator{sqrt($0)}
-            default: break
+        case "×": operationOperator{$0 * $1}
+        case "÷": operationOperator{$1 / $0}
+        case "+": operationOperator{$0 + $1}
+        case "−": operationOperator{$1 - $0}
+        case "√": oneOperationOperator{sqrt($0)}
+        default: break
         }*/
         
     }
@@ -72,7 +72,7 @@ class ViewController: UIViewController {
     
     @IBAction func enter() {
         isReadyInput=false
-//        operateStack.append(displayValue)
+        //        operateStack.append(displayValue)
         brain.pushOperand(displayValue)
         print("push:\(displayValue)")
     }
